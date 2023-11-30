@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navbar = document.getElementById('navbar');
+
+            menuToggle.addEventListener('click', function () {
+                navbar.classList.toggle('active');
+            });
+});
+    </script>
+</head>
+<body>
+
+<header>
+    <button id="menu-toggle">☰</button>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#news">Noticias</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#about">Acerca de</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Contenido principal -->
+
+</body>
+</html>

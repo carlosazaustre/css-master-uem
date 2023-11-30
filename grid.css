@@ -1,0 +1,36 @@
+header {
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    background-color: lightgreen;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+/* @media (width <= 768px) { */
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+article {
+    background-color: lightpink;
+    padding: 20px;
+}
+
+aside {
+    background-color: lightyellow;
+    padding: 20px;
+}
+
+footer {
+    background-color: lightcoral;
+    padding: 10px;
+    text-align: center;
+}

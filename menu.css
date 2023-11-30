@@ -1,0 +1,69 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header button {
+    display: none;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 600px) {
+    header button {
+        display: initial;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #ffcc00;
+        transition: all 1.5s;
+    }
+
+    nav ul {
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-start;
+    }
+
+    nav ul li a {
+        padding: 20px;
+    }
+
+    nav.active {
+        left: 0;
+    }
+}
